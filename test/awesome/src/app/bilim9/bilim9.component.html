@@ -1,0 +1,50 @@
+<div class="position-relative m-5">
+    <div class="progress" style="height: 1px;">
+      <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="0"></div>
+    </div>
+    <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">8</button>
+    <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">9</button>
+    <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">10</button>
+   
+</div>
+   
+<div class="container  bg-warning border border-dark p-5" id="quizmain">
+    <div id="quizcontainer">
+    
+      
+  
+      <h3 class="text-center">Soru 9:</h3>
+      <p id="qtext">"Newton mekaniğinin yasalarını değiştiren ve kütle ile enerjinin eşdeğerli olduğunu öne süren sınırlı bağlılık (1905); eğrisel ve sonlu olarak düşünülen dört boyutlu bir evrene ait çekim teorisini veren genel bağlılık (1916); elektro-manyetizma ve yer çekimini aynı alanda birleştiren daha geniş kapsamlı teori denemeleri." Bu teori denemeleri hangi bilim adamına aittir?
+      
+       
+       </p>
+        <form role="form" id="quizform" name="quizform" action="quiztest.asp?qtest=CPP" method="post">
+        <input type="hidden" name="starttime" value="4/23/2022 12:14:57 PM">
+        <input type="hidden" name="answers" value="0000000000000000000000000">
+        <input type="hidden" name="nextnumber">
+        <input type="hidden" name="prevnumber" value="1">
+        <div style="position:relative;width:100%;">
+          <div id="container" class="notranslate">
+                <label class="container bg-info p-2 m-1 border border-dark" id="label3">   Albert Einstein <input type="radio" name="quiz" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span></label>
+                <label class="container bg-info p-2 m-1 border border-dark" id="label4">         Niels Bohr                  <input type="radio" name="quiz" id="4" onclick="clickRadio(this)" value="4"><span class="checkmark"></span></label>
+                <label class="container bg-info p-2 m-1 border border-dark" id="label1">  Emmy Noether<input type="radio" name="quiz" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span></label>
+                
+          </div>
+        </div>
+        <div id="answerbuttoncontainer">
+          <button class="answerbutton w3-btn ws-green" type="submit" onclick="clickNextButton(1)" >  
+            
+            <a class="text-dark mb-3" routerLink="/bilim10">Next ❯</a>
+          </button>
+          
+        </div>
+      </form>
+      
+       
+      
+    </div>
+  </div>
+  <div class="fixed-bottom bg-dark text-white p-5 opacity-100">
+    <div class="container text-center"></div>
+  </div>
+
